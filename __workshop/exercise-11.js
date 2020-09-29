@@ -6,12 +6,17 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
-  // grades is an array of numbers
+  let sum = 0;
+
+  for (let i = 0; i < grades.length; i++) {
+    sum += grades[i];
+  }
+  return Math.floor(sum / grades.length);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
-// Create more test cases.
+console.log(calculateAverage([85, 89, 90, 57, 75, 87, 81, 95]));
 
 // This is needed for automated testing (more on that later)
 module.exports = calculateAverage;

@@ -10,7 +10,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
+  const index = array.indexOf(string);
+  array.splice(index, 1);
+  return array;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

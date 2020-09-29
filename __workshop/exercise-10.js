@@ -8,12 +8,18 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function allLong(list) {
-  // list is an array of strings
+  return list.every(function (name) {
+    return name.length > 5;
+  });
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
-// Create more test cases.
-
-// This is needed for automated testing (more on that later)
+console.log(
+  allLong(["Robert", "Robert", "Robert", "Robert", "Robert", "Robert"])
+);
+console.log(
+  allLong(["Robert", "Robert", "Robert", "Robert", "Robert", "Jeff"])
+);
+// This is needed for automated testing (more on that later
 module.exports = allLong;

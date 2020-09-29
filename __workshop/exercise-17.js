@@ -19,9 +19,7 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function findArmstrongNumbers(num1, num2) {
-  // num1 and num2 are Numbers
-}
+function findArmstrongNumbers(num1, num2) {}
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

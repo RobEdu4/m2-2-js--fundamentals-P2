@@ -8,7 +8,13 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeEvens(list) {
-  // list is an array of numbers
+  let newList = [];
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] % 2 !== 0) {
+      newList.push(list[i]);
+    }
+  }
+  return newList;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

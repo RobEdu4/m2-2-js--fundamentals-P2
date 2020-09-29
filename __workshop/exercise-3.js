@@ -8,8 +8,8 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function getMax(num1, num2) {
-  // code here
+function getMax(num1, num2, num3, num4) {
+  return Math.max(num1, num2, num3, num4);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -19,7 +19,7 @@ function getMax(num1, num2) {
 // Can you figure out how we could use it to determine the greater number between 4 integers?
 
 // Call the function to test your code.
-console.log(getMax(12, 43));
+console.log(getMax(12, 43, 100, 52));
 
 // Create more test examples.
 

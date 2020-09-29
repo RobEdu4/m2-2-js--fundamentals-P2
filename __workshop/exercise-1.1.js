@@ -9,7 +9,8 @@
 // -----------------------------------------------------------------
 function countNames(fullName) {
   // complete the function
-  return fullName.split(" ");
+  let nameArray = fullName.split(" ");
+  return nameArray.length;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

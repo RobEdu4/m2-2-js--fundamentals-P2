@@ -8,7 +8,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function filterNonUnique(arr) {
-  // arr is an array of values of any type
+  let uniqueArray = [];
+  return (uniqueArray = [...new Set(arr)]);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

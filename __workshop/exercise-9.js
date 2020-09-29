@@ -9,8 +9,15 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greetLong(list) {
-  // list is an array of strings
+  return list
+    .filter(function (name) {
+      return name.length > 3;
+    })
+    .map(function (name) {
+      return `Hello ${name}`;
+    });
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

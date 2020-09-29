@@ -13,12 +13,34 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
-  // grades is an array of numbers
+  //avg
+  let sum = 0;
+  for (let i = 0; i < grades.length; i++) {
+    sum += grades[i];
+  }
+  let average = sum / grades.length;
+  //avg
+
+  for (let i = 0; i < grades.length; i++) {
+    if (grades[i] <= 100 && grades[i] > 89) {
+      grades.splice(i, 1, "A");
+    } else if (grades[i] < 90 && grades[i] > 79) {
+      grades.splice(i, 1, "B");
+    } else if (grades[i] < 80 && grades[i] > 69) {
+      grades.splice(i, 1, "C");
+    } else if (grades[i] < 70 && grades[i] > 59) {
+      grades.splice(i, 1, "D");
+    } else if (grades[i] < 60) {
+      grades.splice(i, 1, "F");
+    }
+  }
+
+  return grades;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
-// Call the function with [48, 95, 65, 48, 59, 78, 72, 65]
+console.log(getLetterGrade([48, 95, 65, 48, 59, 78, 72, 65]));
 
 // Create more test cases.
 

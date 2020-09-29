@@ -6,7 +6,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
-  // code here
+  const index = array.indexOf(item);
+  if (index >= 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

@@ -8,7 +8,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
-  // list is an array of strings
+  let longer = list.filter((word) => word.length > 5);
+  return longer;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

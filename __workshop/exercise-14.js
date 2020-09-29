@@ -8,7 +8,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countChar(str, char) {
-  // str and char are both strings
+  dupeCount = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === char) dupeCount++;
+  }
+  return dupeCount;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
