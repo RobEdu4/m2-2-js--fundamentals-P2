@@ -19,7 +19,21 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function findArmstrongNumbers(num1, num2) {}
+function findArmstrongNumbers(num1, num2) {
+  let armNums = [];
+
+  for (let i = num1; i < num2; i++) {
+    let digits = i.toString().split("");
+    let sum = 0;
+    for (let j = 0; j < digits.length; j++) {
+      var exponent = digits.length;
+      sum += Math.pow(digits[j], exponent);
+    }
+    if (sum === i) armNums.push(i);
+  }
+  return armNums;
+}
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

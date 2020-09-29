@@ -24,6 +24,7 @@ function findNumbers(num1, num2) {
 
   return arrayNums;
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
