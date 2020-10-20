@@ -9,7 +9,7 @@
 // -----------------------------------------------------------------
 function allLong(list) {
   return list.every(function (name) {
-    return name.length > 5;
+    return name.length > 4;
   });
 }
 // -----------------------------------------------------------------
@@ -19,7 +19,7 @@ console.log(
   allLong(["Robert", "Robert", "Robert", "Robert", "Robert", "Robert"])
 );
 console.log(
-  allLong(["Robert", "Robert", "Robert", "Robert", "Robert", "Jeff"])
+  allLong(["Robert", "Robert", "Robert", "Robert", "Robert", "Jeffr"])
 );
 // This is needed for automated testing (more on that later
 module.exports = allLong;

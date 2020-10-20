@@ -15,8 +15,10 @@ function itemIsPresent(array, item) {
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
-//
-//
+
+// 1 liner
+// return array.includes(item);
+
 // Test case
 const myArray = [
   "bacon",
@@ -33,6 +35,9 @@ const myArray = [
 console.log(itemIsPresent(myArray, "funky")); // true
 console.log(itemIsPresent(myArray, "elephant")); // false
 
+console.log(itemIsPresent(myArray, "appropriate")); // false
+console.log(itemIsPresent(myArray, "code")); // true
+console.log(itemIsPresent(myArray, "programming")); // false
 // Create more test cases
 
 // This is needed for automated testing (more on that later)

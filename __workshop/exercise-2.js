@@ -16,7 +16,8 @@ function getMax(num1, num2) {
 // Call the function to test your code.
 console.log(getMax(12, 43));
 
-// Create more test examples.
+console.log(getMax(52234, 43));
+console.log(getMax(41, 7432));
 
 // This is needed for automated testing (more on that later)
 module.exports = getMax;

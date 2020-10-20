@@ -6,12 +6,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
-  let sum = 0;
-
-  for (let i = 0; i < grades.length; i++) {
-    sum += grades[i];
-  }
-  return Math.floor(sum / grades.length);
+  const sum = grades.reduce((a, b) => a + b, 0);
+  return Math.round(sum / grades.length);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

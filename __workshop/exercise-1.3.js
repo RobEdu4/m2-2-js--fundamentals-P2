@@ -9,15 +9,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function characterCount(string) {
-  let charCount = 0;
-
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] !== " ") {
-      charCount++;
-    }
-  }
-  return charCount;
+  return string.length;
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

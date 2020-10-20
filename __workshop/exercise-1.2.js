@@ -24,6 +24,7 @@ console.log(
     "Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Rick C-137"
   )
 );
+/* console.log(arrOfNames("Simple Simon, Pimple Pete, Bird Up, Legalize Ranch"));  */
 // Create more test examples.
 
 // This is needed for automated testing (more on that later)

@@ -8,8 +8,8 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function getMax(num1, num2, num3, num4) {
-  return Math.max(num1, num2, num3, num4);
+function getMax(num1, num2) {
+  return Math.max(num1, num2);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -19,9 +19,10 @@ function getMax(num1, num2, num3, num4) {
 // Can you figure out how we could use it to determine the greater number between 4 integers?
 
 // Call the function to test your code.
-console.log(getMax(12, 43, 100, 52));
+console.log(getMax(12, 43));
 
-// Create more test examples.
+console.log(getMax(36, 85));
+console.log(getMax(356, 100));
 
 // This is needed for automated testing (more on that later)
 module.exports = getMax;

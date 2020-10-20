@@ -17,8 +17,6 @@ function greet(list) {
 /*
 // -----------------------------------------------------------------
 
-
-
 unassisted
 
 function greet(list) {
@@ -29,6 +27,12 @@ function greet(list) {
 // Edit only the code between the lines (above)
 */
 console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
+console.log(
+  greet(["Robert", "Kristina", "Mallory", "Jenn", "Maggie", "Felicia"])
+);
+console.log(
+  greet(["Jeffrey", "Emma", "Heather", "Tracey", "Danielle", "Jessica"])
+);
 
 // Create more test cases.
 

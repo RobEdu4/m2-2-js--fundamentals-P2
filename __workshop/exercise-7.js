@@ -18,7 +18,29 @@ console.log(
   keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
 );
 
-// Create more test cases.
+console.log(
+  keepLong([
+    "Alpaka",
+    "Smol",
+    "Beatport",
+    "Fragments",
+    "Collision",
+    "Juice",
+    "Box",
+  ])
+);
+
+console.log(
+  keepLong([
+    "Juice",
+    "Boxes",
+    "Full",
+    "Impacting",
+    "Liquorish",
+    "Apartment",
+    "Settlement",
+  ])
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;

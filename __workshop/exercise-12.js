@@ -12,35 +12,35 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function getLetterGrade(grades) {
+function getLetterGrade(average) {
   //avg
-  let sum = 0;
-  for (let i = 0; i < grades.length; i++) {
-    sum += grades[i];
-  }
-  let average = sum / grades.length;
-  //avg
+  const sum = average.reduce((a, b) => a + b, 0);
+  //  let avg = sum / average.length;
+  let avg = 60;
+  let letterGrade = "";
 
-  for (let i = 0; i < grades.length; i++) {
-    if (grades[i] <= 100 && grades[i] > 89) {
-      grades.splice(i, 1, "A");
-    } else if (grades[i] < 90 && grades[i] > 79) {
-      grades.splice(i, 1, "B");
-    } else if (grades[i] < 80 && grades[i] > 69) {
-      grades.splice(i, 1, "C");
-    } else if (grades[i] < 70 && grades[i] > 59) {
-      grades.splice(i, 1, "D");
-    } else if (grades[i] < 60) {
-      grades.splice(i, 1, "F");
-    }
+  if (avg <= 100 && avg > 89) {
+    letterGrade = "A";
+  }
+  if (avg < 90 && avg > 79) {
+    letterGrade = "B";
+  }
+  if (avg < 80 && avg > 69) {
+    letterGrade = "C";
+  }
+  if (avg < 70 && avg > 59) {
+    letterGrade = "D";
+  }
+  if (avg < 60) {
+    letterGrade = "F";
   }
 
-  return grades;
+  return letterGrade;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
-console.log(getLetterGrade([48, 95, 65, 48, 59, 78, 72, 65]));
+console.log(getLetterGrade([48, 95, 65, 48, 59, 78, 72, 65, 90, 90, 95, 200]));
 
 // Create more test cases.
 
