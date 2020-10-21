@@ -16,7 +16,7 @@ function getLetterGrade(average) {
   //avg
   const sum = average.reduce((a, b) => a + b, 0);
   //  let avg = sum / average.length;
-  let avg = 60;
+  let avg = sum / average.length;
   let letterGrade = "";
 
   if (avg <= 100 && avg > 89) {
@@ -41,7 +41,8 @@ function getLetterGrade(average) {
 // Edit only the code between the lines (above)
 
 console.log(getLetterGrade([48, 95, 65, 48, 59, 78, 72, 65, 90, 90, 95, 200]));
-
+console.log(getLetterGrade([48, 95, 65, 48, 59, 78, 72, 65]));
+console.log(getLetterGrade([90, 80, 40, 50, 60, 100]));
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)
